@@ -50,47 +50,13 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.15"
   s.summary = "Ruby FFI for libxdo (X mouse / keypress injector)"
-
-  if s.respond_to? :specification_version then
-    s.specification_version = 3
-
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<ffi>, [">= 1.0.0"])
-      s.add_development_dependency(%q<rdoc>, [">= 3.12"])
-      s.add_development_dependency(%q<rspec>, [">= 2.8.0"])
-      s.add_development_dependency(%q<bundler>, [">= 1.0.0"])
-      s.add_development_dependency(%q<jeweler>, [">= 1.6.4"])
-      s.add_development_dependency(%q<rcov>, [">= 0"])
-      s.add_runtime_dependency(%q<ffi>, [">= 1.0.0"])
-      s.add_development_dependency(%q<rspec>, ["~> 2.5.0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_development_dependency(%q<jeweler>, ["~> 1.5.2"])
-      s.add_development_dependency(%q<rcov>, [">= 0"])
-    else
-      s.add_dependency(%q<ffi>, [">= 1.0.0"])
-      s.add_dependency(%q<rdoc>, [">= 3.12"])
-      s.add_dependency(%q<rspec>, [">= 2.8.0"])
-      s.add_dependency(%q<bundler>, [">= 1.0.0"])
-      s.add_dependency(%q<jeweler>, [">= 1.6.4"])
-      s.add_dependency(%q<rcov>, [">= 0"])
-      s.add_dependency(%q<ffi>, [">= 1.0.0"])
-      s.add_dependency(%q<rspec>, ["~> 2.5.0"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-      s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
-      s.add_dependency(%q<rcov>, [">= 0"])
-    end
-  else
-    s.add_dependency(%q<ffi>, [">= 1.0.0"])
-    s.add_dependency(%q<rdoc>, [">= 3.12"])
-    s.add_dependency(%q<rspec>, [">= 2.8.0"])
-    s.add_dependency(%q<bundler>, [">= 1.0.0"])
-    s.add_dependency(%q<jeweler>, [">= 1.6.4"])
-    s.add_dependency(%q<rcov>, [">= 0"])
-    s.add_dependency(%q<ffi>, [">= 1.0.0"])
-    s.add_dependency(%q<rspec>, ["~> 2.5.0"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
-    s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
-    s.add_dependency(%q<rcov>, [">= 0"])
-  end
+  s.add_runtime_dependency('ffi', [">= 1.0.0"])
+  s.add_development_dependency('rdoc', [">= 3.12"])
+  s.add_development_dependency('rspec', [">= 2.8.0"])
+  s.add_development_dependency('rspec-collection_matchers', ['>= 0'])
+  s.add_development_dependency('bundler', [">= 1.0.0"])
+  s.add_development_dependency('jeweler', [">= 1.6.4"])
+  s.add_development_dependency('simplecov', [">= 0"])
+  s.add_development_dependency('simplecov-rcov', [">= 0"])
 end
 
